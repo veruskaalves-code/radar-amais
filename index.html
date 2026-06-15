@@ -7,26 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --roxo: #6B0FCC;
-  --roxo-light: #EDE0FA;
-  --roxo-mid: #C084F5;
-  --rosa: #E8167A;
-  --rosa-light: #FCE4F1;
+  --roxo: #6B0FCC; --roxo-light: #EDE0FA; --roxo-mid: #C084F5;
+  --rosa: #E8167A; --rosa-light: #FCE4F1;
   --grad: linear-gradient(135deg, #E8167A, #6B0FCC);
-  --preto: #1A1A1A;
-  --cinza-escuro: #3D3D3D;
-  --cinza: #6B7280;
-  --cinza-claro: #F3F4F6;
-  --borda: #E5E7EB;
-  --branco: #ffffff;
-  --verde: #10B981;
-  --verde-light: #D1FAE5;
-  --amarelo: #F59E0B;
-  --amarelo-light: #FEF3C7;
-  --vermelho: #EF4444;
-  --vermelho-light: #FEE2E2;
-  --laranja: #F97316;
-  --laranja-light: #FFEDD5;
+  --preto: #1A1A1A; --cinza-escuro: #3D3D3D; --cinza: #6B7280;
+  --cinza-claro: #F3F4F6; --borda: #E5E7EB; --branco: #ffffff;
+  --verde: #10B981; --verde-light: #D1FAE5;
+  --amarelo: #F59E0B; --amarelo-light: #FEF3C7;
+  --vermelho: #EF4444; --vermelho-light: #FEE2E2;
+  --laranja: #F97316; --laranja-light: #FFEDD5;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--preto); font-size: 14px; line-height: 1.6; padding: 28px 20px; }
@@ -67,7 +56,6 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
 .dot-r { background: var(--vermelho); }
 .dot-a { background: var(--amarelo); }
-.dot-p { background: var(--roxo); }
 .alert-item { font-size: 12px; color: #374151; padding: 5px 0; border-bottom: 1px solid #F9FAFB; display: flex; align-items: flex-start; gap: 8px; }
 .alert-item:last-child { border-bottom: none; padding-bottom: 0; }
 .ait { margin-top: 6px; flex-shrink: 0; }
@@ -108,13 +96,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 .top3-nome { font-size: 13px; font-weight: 600; color: var(--preto); margin-bottom: 8px; line-height: 1.3; }
 .top3-stat { font-size: 11px; color: var(--cinza); margin-bottom: 3px; display: flex; gap: 6px; align-items: flex-start; }
 .top3-bullet { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
-.semresp-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #F9FAFB; }
-.semresp-row:last-child { border-bottom: none; }
-.semresp-grupo { font-size: 12px; color: #1F2937; flex: 1; }
-.semresp-dias { font-size: 11px; color: #9CA3AF; font-family: 'DM Mono', monospace; }
-.semresp-badge { font-size: 9px; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
-.badge-r { background: var(--vermelho-light); color: var(--vermelho); }
-.badge-a { background: var(--amarelo-light); color: var(--amarelo); }
+.parceiro-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #F9FAFB; }
+.parceiro-row:last-child { border-bottom: none; }
+.parceiro-nome { font-size: 12px; font-weight: 600; color: #1F2937; min-width: 140px; }
+.parceiro-escolas { font-size: 11px; color: var(--cinza); flex: 1; }
+.parceiro-count { font-size: 11px; font-family: 'DM Mono', monospace; color: var(--roxo); font-weight: 500; flex-shrink: 0; }
 .insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .insight-card { background: #FDFBFF; border-radius: 10px; border: 1px solid var(--borda); padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
 .insight-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
@@ -123,7 +109,6 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 .icon-red { background: var(--vermelho-light); }
 .icon-green { background: var(--verde-light); }
 .icon-amber { background: var(--amarelo-light); }
-.icon-gray { background: var(--cinza-claro); }
 .insight-title { font-size: 10px; font-weight: 600; color: var(--cinza-escuro); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
 .insight-text { font-size: 11px; color: var(--cinza); line-height: 1.55; }
 .footer { text-align: center; font-size: 10px; color: #9CA3AF; padding: 16px 0 0; font-family: 'DM Mono', monospace; }
@@ -133,7 +118,6 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <body>
 <div class="page">
 
-<!-- HEADER -->
 <div class="header">
 <div class="header-grad-bar"></div>
 <div class="header-inner">
@@ -145,48 +129,46 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     </div>
     <div class="header-period">
       <div class="period-label">período</div>
-      <div class="period-date">08/06/2026 a 15/06/2026</div>
+      <div class="period-date">08/06/2026 a 14/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">15/06/2026 · 14:45h</div>
+      <div class="period-date">15/06/2026 · 18:19h</div>
     </div>
   </div>
   <div class="kpi-grid">
     <div class="kpi-card kpi-accent">
       <div class="kpi-label">total de interações</div>
-      <div class="kpi-value grad">206</div>
+      <div class="kpi-value grad">219</div>
       <div class="kpi-sub">10 erros/instab · 0 duvidas</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">dia mais ativo</div>
-      <div class="kpi-value" style="font-size:20px;">qui</div>
-      <div class="kpi-sub">pico em qui com 49 msgs</div>
+      <div class="kpi-value" style="font-size:20px;">seg</div>
+      <div class="kpi-sub">pico em seg com 51 msgs</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">categoria principal</div>
-      <div class="kpi-value grad" style="font-size:18px;line-height:1.2;">pedido de ajuda</div>
-      <div class="kpi-sub">pedido de ajuda domina com 89%</div>
+      <div class="kpi-value grad" style="font-size:18px;line-height:1.2;">formacoes e treinamentos</div>
+      <div class="kpi-sub">formacoes e treinamentos domina com 89%</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">taxa de resposta</div>
-      <div class="kpi-value grad">69%</div>
-      <div class="kpi-sub danger">9 de 13 grupos respondidos</div>
+      <div class="kpi-label">taxa de resposta · time amais</div>
+      <div class="kpi-value grad">77%</div>
+      <div class="kpi-sub danger">10 de 13 grupos respondidos pelo time Amais</div>
     </div>
   </div>
 </div></div>
 
-<!-- ALERTAS -->
 <div class="alert-strip">
   <div class="alert-box red">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF de boletins fora do ar - erro ao tentar baixar boletins e gerar arquivos PDF, impactando validação de notas</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Discrepância crítica em diários: total de aulas dadas não bate com aulas realizadas e conteúdos lançados - órgão fiscalizador solicitou correção</span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF de boletins fora do ar - impossível baixar boletins e gerar relatórios, impactando validação de notas</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Discrepância crítica nos registros de aulas: total de aulas dadas não bate com aulas realizadas e conteúdos lançados - órgão externo exigiu correção</span></div>
   </div>
   <div class="alert-box amber">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span>Erro no aplicativo mobile do Softdesk - acesso funcionando apenas via web, não via app</span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span>Problemas de acesso ao Softdesk - múltiplos usuários relatando incapacidade de login com credenciais corretas</span></div>
   </div>
 </div>
 
-<!-- PRIORIDADES + BARRAS -->
 <div class="row col-32">
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>top 3 prioridades da semana</div>
@@ -194,34 +176,34 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
-      <div class="pri-text">Corrigir discrepância de diários e aulas — <span style="color:#6B7280;">Igor Santos</span></div>
+      <div class="pri-text" style="font-weight:600;">Corrigir discrepância de aulas nos diários</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Ajustar registros para que total de aulas dadas bata com aulas realizadas e com sucesso. Necessário reabrir chamado para equipe técnica</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text">Resolver erro na geração de PDF de boletins — <span style="color:#6B7280;">Thiago Paiva</span></div>
+      <div class="pri-text" style="font-weight:600;">Restaurar funcionalidade de geração de PDF de boletins</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar instabilidade no sistema que causa erro ao gerar boletins em PDF - necessário para processo de validação de notas</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text">Resolver conflito de perfil - Professor Wanderson — <span style="color:#6B7280;">Thiago Paiva</span></div>
+      <div class="pri-text" style="font-weight:600;">Resolver problemas de acesso ao Softdesk</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Corrigir erro de autenticação no Softdesk e problema de acesso via aplicativo móvel (site funciona, app não)</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   </div>
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>interações por dia</div>
-    <div class="chart-wrap chart-h180">
-      <canvas id="chartDias"></canvas>
-    </div>
+    <div class="chart-wrap chart-h180"><canvas id="chartDias"></canvas></div>
   </div>
 </div>
 
-<!-- ESCOLAS + CATEGORIAS -->
 <div class="row col-23">
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>escolas mais engajadas</div>
@@ -230,63 +212,60 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <span class="rank-n">01</span>
     <span class="rank-nome">Interação</span>
     <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:100%"></div></div>
-    <span class="rank-val">66</span>
+    <span class="rank-val">68</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">02</span>
     <span class="rank-nome">Over</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:42%"></div></div>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:41%"></div></div>
     <span class="rank-val">28</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">03</span>
     <span class="rank-nome">João Paulo I</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:39%"></div></div>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:38%"></div></div>
     <span class="rank-val">26</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">04</span>
     <span class="rank-nome">Crescimento</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:35%"></div></div>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:34%"></div></div>
     <span class="rank-val">23</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">05</span>
-    <span class="rank-nome">Comunidade amais educação</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:20%"></div></div>
-    <span class="rank-val">13</span>
+    <span class="rank-nome">Canadense ECB</span>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:22%"></div></div>
+    <span class="rank-val">15</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">06</span>
-    <span class="rank-nome">Primeiro Mundo</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:17%"></div></div>
-    <span class="rank-val">11</span>
+    <span class="rank-nome">Comunidade amais educação</span>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:19%"></div></div>
+    <span class="rank-val">13</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">07</span>
-    <span class="rank-nome">Contemps</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:15%"></div></div>
-    <span class="rank-val">10</span>
+    <span class="rank-nome">Primeiro Mundo</span>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:16%"></div></div>
+    <span class="rank-val">11</span>
   </div>
   <div class="rank-row">
     <span class="rank-n">08</span>
-    <span class="rank-nome">Vale Primeiro Mundo</span>
-    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:12%"></div></div>
-    <span class="rank-val">8</span>
+    <span class="rank-nome">Contemps</span>
+    <div class="rank-bar-wrap"><div class="rank-bar-roxo" style="width:15%"></div></div>
+    <span class="rank-val">10</span>
   </div>
   </div>
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>categorias da semana</div>
     <div style="display:flex;align-items:center;gap:16px;">
-      <div class="chart-wrap chart-h200" style="width:190px;flex-shrink:0;">
-        <canvas id="chartCat"></canvas>
-      </div>
+      <div class="chart-wrap chart-h200" style="width:190px;flex-shrink:0;"><canvas id="chartCat"></canvas></div>
       <div id="cat-legenda" style="flex:1;min-width:0;"></div>
     </div>
   </div>
 </div>
 
-<!-- DÚVIDAS + CHAMADOS -->
 <div class="row col-2">
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>top 5 dúvidas da semana</div>
@@ -294,27 +273,27 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como exatamente colocar a contestação no chamado sobre aulas realizadas vs aulas dadas? <span class="tag tag-roxo" style="margin-left:4px;">Processos/Diários</span></div>
+    <div class="duvida-text">Como fazer a contestação correta sobre quantitativo de aulas realizadas vs aulas dadas? <span class="tag tag-roxo" style="margin-left:4px;">Diários e aulas</span></div>
     <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">O que significa faltas em branco no relatório de frequência? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
+    <div class="duvida-text">O que significa 'faltas em branco' no relatório de frequência? <span class="tag tag-roxo" style="margin-left:4px;">Frequência/Faltas</span></div>
     <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como gerar relatório de faltas com período e datas para um único aluno? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
+    <div class="duvida-text">Qual filtro e relatório usar para gerar documento de faltas com período e datas para aluno específico? <span class="tag tag-roxo" style="margin-left:4px;">Relatório de faltas</span></div>
     <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">4</div>
-    <div class="duvida-text">Qual é exatamente o erro no app do Softdesk? <span class="tag tag-roxo" style="margin-left:4px;">Sistema/Acesso</span></div>
+    <div class="duvida-text">Como resolver conflito de perfil quando usuário é responsável e professor simultaneamente? <span class="tag tag-roxo" style="margin-left:4px;">Acesso e perfil</span></div>
     <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">5</div>
-    <div class="duvida-text">Como resolver acesso ao Softdesk quando credenciais estão corretas? <span class="tag tag-roxo" style="margin-left:4px;">Acesso</span></div>
+    <div class="duvida-text">Como redefinir senha de acesso ao Softdesk? <span class="tag tag-roxo" style="margin-left:4px;">Acesso</span></div>
     <div class="duvida-count">1x</div>
   </div>
   </div>
@@ -343,117 +322,71 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   </div>
 </div>
 
-<!-- TOP 3 ESCOLAS -->
 <div class="card" style="margin-bottom:14px;">
   <div class="sec"><div class="sec-dot"></div>top 3 escolas para acompanhar de perto</div>
   <div class="top3-grid">
-    
   <div class="top3-card top1">
-    <div class="top3-rank">atencao maxima</div>
+    <div class="top3-rank">atenção máxima</div>
     <div class="top3-nome">Interação</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>66 interações na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>66 mensagens na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>Foco: produto</div>
+    <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>68 interações na semana</div>
   </div>
   <div class="top3-card top2">
-    <div class="top3-rank">atencao elevada</div>
+    <div class="top3-rank">atenção elevada</div>
     <div class="top3-nome">Over</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--amarelo);"></div>28 interações na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--amarelo);"></div>28 mensagens na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--amarelo);"></div>Foco: produto</div>
   </div>
   <div class="top3-card top3">
     <div class="top3-rank">monitoramento</div>
     <div class="top3-nome">João Paulo I</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--roxo);"></div>26 interações na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--roxo);"></div>26 mensagens na semana</div>
-    <div class="top3-stat"><div class="top3-bullet" style="background:var(--roxo);"></div>Foco: produto</div>
-  </div>
-  </div>
+  </div></div>
 </div>
 
-<!-- SEM RESPOSTA -->
 <div class="card" style="margin-bottom:14px;">
-  <div class="sec"><div class="sec-dot"></div>grupos sem resposta na semana</div>
-  
-  <div class="semresp-row">
-    <span class="semresp-grupo">Amais/Pedag & Interação</span>
-    <span class="semresp-dias">sem resposta</span>
-    <span class="semresp-badge badge-a">parcial</span>
-  </div>
-  <div class="semresp-row">
-    <span class="semresp-grupo">Amais/ Pedag e Canadense ECB</span>
-    <span class="semresp-dias">sem resposta</span>
-    <span class="semresp-badge badge-a">parcial</span>
-  </div>
-  <div class="semresp-row">
-    <span class="semresp-grupo">Amais/Pedag & Universitário</span>
-    <span class="semresp-dias">sem resposta</span>
-    <span class="semresp-badge badge-a">parcial</span>
-  </div>
-  <div class="semresp-row">
-    <span class="semresp-grupo">Amais/Pedag e Centro de Estudos</span>
-    <span class="semresp-dias">sem resposta</span>
-    <span class="semresp-badge badge-a">parcial</span>
-  </div>
+  <div class="sec"><div class="sec-dot"></div>problemas com parceiros integrados</div>
+  <div style="font-size:10px;color:#9CA3AF;margin-bottom:10px;font-style:italic;">Árvore de Livros · Matific · SAS · Poliedro · Redação Online · e outros</div>
+  <div style="font-size:12px;color:#10B981;padding:8px 0;">✅ Nenhum problema com parceiros identificado esta semana</div>
 </div>
 
-<!-- INSIGHTS -->
 <div class="card" style="margin-bottom:14px;">
   <div class="sec"><div class="sec-dot"></div>insights da semana</div>
   <div class="insights-grid">
-    
   <div class="insight-card">
-    <div class="insight-icon icon-red">🔴</div>
-    <div><div class="insight-title">Múltiplas falhas de acesso e sistema em paralelo</div><div class="insight-text">Problemas simultâneos: Softdesk (web/app), geração de PDF, acesso de usuários - sugere possível instabilidade infraestrutural ou problemas de integração</div></div>
-  </div>
-  <div class="insight-card">
-    <div class="insight-icon icon-amber">🟠</div>
-    <div><div class="insight-title">Falta de padronização em processos de contestação</div><div class="insight-text">Discussão sobre como formalizar contestação de aulas revela ausência de protocolo claro - precisa documentação ou tutorial para usuários</div></div>
+    <div class="insight-icon icon-red">⚠️</div>
+    <div><div class="insight-title">Falha sistemática em plataforma crítica</div><div class="insight-text">PDF de boletins e Softdesk apresentam instabilidades simultâneas, indicando possível problema infraestrutural mais amplo</div></div>
   </div>
   <div class="insight-card">
-    <div class="insight-icon icon-roxo">🟣</div>
-    <div><div class="insight-title">Dependência de Inspira para redefinição de senhas</div><div class="insight-text">Sistema não permite redefinição de senha - usuários precisam contatar equipe Inspira, criando gargalo administrativo e lentidão na resolução</div></div>
+    <div class="insight-icon icon-amber">📊</div>
+    <div><div class="insight-title">Inconsistência de dados pedagógicos</div><div class="insight-text">Registros de aulas estão desalinhados entre professor e sistema - necessária auditoria de lançamentos de conteúdo e presença</div></div>
   </div>
-  </div>
+  <div class="insight-card">
+    <div class="insight-icon icon-amber">🔐</div>
+    <div><div class="insight-title">Questões de autenticação em múltiplos acessos</div><div class="insight-text">Múltiplos relatos de problemas de login (Softdesk, app) e recuperação de senha fora da competência da plataforma (delegada a Inspira)</div></div>
+  </div></div>
 </div>
 
 <div class="footer"><span>amais educação</span> · atendimento whatsapp inspira · gerado automaticamente via n8n + claude</div>
-
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
-const diasData = [38,24,46,49,44];
-const diasColors = ["#EDE0FA","#EDE0FA","#EDE0FA","#6B0FCC","#EDE0FA"];
+const diasData = [51,24,46,49,44];
+const diasColors = ["#6B0FCC","#EDE0FA","#EDE0FA","#EDE0FA","#EDE0FA"];
 new Chart(document.getElementById('chartDias'), {
   type: 'bar',
-  data: {
-    labels: ['seg','ter','qua','qui','sex'],
-    datasets: [{ data: diasData, backgroundColor: diasColors, borderRadius: 6, borderSkipped: false }]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { display: false }, ticks: { font: { family: 'DM Sans', size: 10 }, color: '#9CA3AF' } },
-      y: { grid: { color: '#F9FAFB' }, ticks: { font: { family: 'DM Sans', size: 10 }, color: '#9CA3AF' }, beginAtZero: true }
-    }
-  }
+  data: { labels: ['seg','ter','qua','qui','sex'], datasets: [{ data: diasData, backgroundColor: diasColors, borderRadius: 6, borderSkipped: false }] },
+  options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false }, ticks: { font: { family: 'DM Sans', size: 10 }, color: '#9CA3AF' } }, y: { grid: { color: '#F9FAFB' }, ticks: { font: { family: 'DM Sans', size: 10 }, color: '#9CA3AF' }, beginAtZero: true } } }
 });
 
-const catData = [{"nome":"erro / bug","pct":3,"cor":"#1A1A1A"},{"nome":"instabilidade","pct":2,"cor":"#3D3D3D"},{"nome":"pedido de ajuda","pct":89,"cor":"#6B7280"},{"nome":"duvida","pct":0,"cor":"#6B0FCC"},{"nome":"formacao","pct":0,"cor":"#C084F5"},{"nome":"integracao parceiro","pct":1,"cor":"#E8167A"},{"nome":"priorizacao chamado","pct":5,"cor":"#FCE4F1"}];
+const catData = [{"nome":"erro / bug","qtd":6,"pct":3,"cor":"#1A1A1A"},{"nome":"instabilidade","qtd":4,"pct":2,"cor":"#3D3D3D"},{"nome":"dúvida","qtd":0,"pct":0,"cor":"#6B0FCC"},{"nome":"formações e treinamentos","qtd":195,"pct":89,"cor":"#C084F5"},{"nome":"integração parceiro","qtd":2,"pct":1,"cor":"#E8167A"},{"nome":"priorização chamado","qtd":12,"pct":5,"cor":"#FCE4F1"}];
 new Chart(document.getElementById('chartCat'), {
   type: 'doughnut',
-  data: {
-    labels: catData.map(function(c){ return c.nome; }),
-    datasets: [{ data: catData.map(function(c){ return c.pct; }), backgroundColor: catData.map(function(c){ return c.cor; }), borderWidth: 2, borderColor: '#fff' }]
-  },
+  data: { labels: catData.map(function(c){ return c.nome; }), datasets: [{ data: catData.map(function(c){ return c.pct; }), backgroundColor: catData.map(function(c){ return c.cor; }), borderWidth: 2, borderColor: '#fff' }] },
   options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { display: false } } }
 });
 const leg = document.getElementById('cat-legenda');
 catData.forEach(function(c) {
-  leg.innerHTML += '<div style="display:flex;align-items:center;gap:6px;padding:3px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:'+c.cor+';flex-shrink:0;"></div><span style="flex:1;">'+c.nome+'</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;">'+c.pct+'%</span></div>';
+  leg.innerHTML += '<div style="display:flex;align-items:center;gap:6px;padding:3px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:'+c.cor+';flex-shrink:0;"></div><span style="flex:1;">'+c.nome+'</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-size:10px;font-weight:600;">'+c.qtd+'</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">'+c.pct+'%</span></div>';
 });
 </script>
 </body>
