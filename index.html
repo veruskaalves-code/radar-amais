@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">08/06/2026 a 14/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">16/06/2026 · 12:41h</div>
+      <div class="period-date">16/06/2026 · 12:58h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -150,7 +150,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <div class="kpi-card">
       <div class="kpi-label">categoria principal</div>
       <div class="kpi-value grad" style="font-size:18px;line-height:1.2;">formações e treinamentos</div>
-      <div class="kpi-sub">formações e treinamentos domina com 88%</div>
+      <div class="kpi-sub">formações e treinamentos domina com 78%</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">taxa de resposta · time amais</div>
@@ -163,11 +163,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <div class="alert-strip">
   <div class="alert-box red">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF para boletins fora do ar - página carrega indefinidamente e exibe erro 'sem resposta'. Afeta processo de validação de notas (relato de Thayná Melo e Gerusa)</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Falha no acesso ao Softdesk - múltiplos usuários relatam impossibilidade de login com credenciais corretas (Secretaria Over Zona Norte e Maria Gledisnauria)</span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF de boletins indisponível - Thayná Melo e Gerusa (Amais/Pedag e Crescimento) relatam erro persistente ao tentar baixar boletins e gerar arquivos em PDF. Necessário para validação de notas.</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Acesso não enviado para responsável - Sofia Barroso Nunes (RA: 38002501) via e-mail milbarroso@yahoo.com.br pela School Over Zona Norte. Mãe relata não recebimento do acesso.</span></div>
   </div>
   <div class="alert-box amber">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span>Inconsistência nos dados de diários - totais de aulas dadas, realizadas e com sucesso não batem conforme requerido (Maria Gledisnauria)</span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span>Inconsistência em dados de diários - Maria Gledisnauria (Secretaria Fundamental) relata que total de aulas dadas não bate com aulas realizadas e aulas realizadas com sucesso.</span></div>
   </div>
 </div>
 
@@ -178,24 +178,24 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Restaurar funcionalidade de geração de PDF para boletins</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar instabilidade no sistema que impede download e geração de arquivos PDF de boletins. Urgente para validação de notas.</div>
+      <div class="pri-text" style="font-weight:600;">Restaurar funcionalidade de geração de PDF de boletins</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar instabilidade no sistema que impede download de boletins e geração de PDFs. Verificar servidores e logs de erro. Crítico para processo de validação de notas.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Resolver problemas de autenticação no Softdesk</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Verificar falhas de login no Softdesk e erro específico no app. Alguns usuários conseguem acessar via web mas não via aplicativo.</div>
+      <div class="pri-text" style="font-weight:600;">Reenviar acesso de responsável Sofia Barroso Nunes</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Confirmar envio de e-mail de acesso para milbarroso@yahoo.com.br (mãe de Sofia Barroso Nunes RA: 38002501) na School Over Zona Norte.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Revisar diários e validar cálculos de frequência</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Reavaliar chamado #94654 - inconsistência entre total de aulas dadas, realizadas e realizadas com sucesso. Reabrir e atribuir à equipe de infraestrutura.</div>
+      <div class="pri-text" style="font-weight:600;">Validar e corrigir dados de frequência e aulas</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Revisar registros de diários na Secretaria Fundamental para garantir consistência entre total de aulas, aulas realizadas e aulas com sucesso. Reaabrir chamado 94654.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
@@ -276,27 +276,27 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Por que o sistema permanece carregando ao tentar baixar/gerar boletins em PDF? <span class="tag tag-roxo" style="margin-left:4px;">Geração de relatórios</span></div>
+    <div class="duvida-text">Como corrigir erro de geração de PDF nos boletins? <span class="tag tag-roxo" style="margin-left:4px;">Sistema/Boletins</span></div>
     <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">Como resolver erro de login no Softdesk com credenciais corretas? <span class="tag tag-roxo" style="margin-left:4px;">Autenticação/Acesso</span></div>
-    <div class="duvida-count">2x</div>
+    <div class="duvida-text">Qual é o erro específico ao tentar acessar o app? <span class="tag tag-roxo" style="margin-left:4px;">Acesso/App</span></div>
+    <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">O que significa 'faltas em branco' no diário de frequência? <span class="tag tag-roxo" style="margin-left:4px;">Interpretação de dados</span></div>
+    <div class="duvida-text">O que significa 'faltas em branco' no diário de frequência? <span class="tag tag-roxo" style="margin-left:4px;">Diários/Frequência</span></div>
     <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">4</div>
-    <div class="duvida-text">Como reabrir chamado quando foi criado com acesso anterior? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de tickets</span></div>
+    <div class="duvida-text">Como resolver conflito de perfil (professor e responsável) do Professor Wanderson Santos Sousa Coimbra? <span class="tag tag-roxo" style="margin-left:4px;">Perfil/Acesso</span></div>
     <div class="duvida-count">1x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">5</div>
-    <div class="duvida-text">Como matricular aluno em turma que obriga plano de pagamento? <span class="tag tag-roxo" style="margin-left:4px;">Matrícula/Financeiro</span></div>
+    <div class="duvida-text">Como matricular aluno do Integral para o Regular? <span class="tag tag-roxo" style="margin-left:4px;">Matrícula</span></div>
     <div class="duvida-count">1x</div>
   </div>
   </div>
@@ -326,19 +326,19 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <div class="top3-rank">atenção máxima</div>
     <div class="top3-nome">Interação</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>37 interações na semana</div>
-    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">33× formações e treinamentos · 2× priorização · 1× erro/bug</div>
+    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">19× formações e treinamentos · 2× priorização · 1× erro/bug</div>
   </div>
   <div class="top3-card top2">
     <div class="top3-rank">atenção elevada</div>
     <div class="top3-nome">João Paulo I</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--amarelo);"></div>26 interações na semana</div>
-    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">24× formações e treinamentos · 2× priorização</div>
+    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">12× formações e treinamentos · 2× priorização</div>
   </div>
   <div class="top3-card top3">
     <div class="top3-rank">monitoramento</div>
     <div class="top3-nome">Crescimento</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--roxo);"></div>23 interações na semana</div>
-    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">20× formações e treinamentos · 1× erro/bug · 1× instabilidade</div>
+    <div style="margin-top:8px;font-size:10px;color:#6B7280;line-height:1.6;">8× formações e treinamentos · 1× erro/bug · 1× instabilidade</div>
   </div></div>
 </div>
 
@@ -355,15 +355,15 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="insights-grid">
   <div class="insight-card">
     <div class="insight-icon icon-red">🔴</div>
-    <div><div class="insight-title">Falhas críticas em múltiplos módulos simultâneos</div><div class="insight-text">Padrão de instabilidade abrangendo: PDF/relatórios, autenticação Softdesk, sincronização de dados em diários. Sugere problema na infraestrutura central ou banco de dados.</div></div>
+    <div><div class="insight-title">Problemas múltiplos de acesso e autenticação</div><div class="insight-text">Secretaria Over Zona Norte, Maria Gledisnauria e outros usuários enfrentam dificuldades para acessar Softdesk, tanto no app quanto em credenciais. Padrão recorrente sugere possível problema de infraestrutura ou sincronização.</div></div>
   </div>
   <div class="insight-card">
     <div class="insight-icon icon-amber">🟠</div>
-    <div><div class="insight-title">Discrepância entre acesso web e mobile</div><div class="insight-text">Usuários conseguem acessar Softdesk via web mas recebem erro no app. Indica problema específico na sincronização ou API do aplicativo móvel.</div></div>
+    <div><div class="insight-title">Falta de resposta do sistema em funcionalidades críticas</div><div class="insight-text">Relatórios de PDF e processamento de dados ficam carregando indefinidamente ou retornam erro. Afeta validação de notas e processos judiciais.</div></div>
   </div>
   <div class="insight-card">
     <div class="insight-icon icon-roxo">🟣</div>
-    <div><div class="insight-title">Falta de padronização em comunicação de suporte</div><div class="insight-text">Usuários tentam reabrir chamados por canais informais. Necessário documentar processo claro de reabertura de tickets e melhorar rastreabilidade.</div></div>
+    <div><div class="insight-title">Necessidade de melhor comunicação sobre fluxos de resolução</div><div class="insight-text">Usuários como Maria Gledisnauria e Marta solicitam reabertura de chamados e priorização sem clareza sobre status. Recomenda-se automação de rastreamento e notificações proativas.</div></div>
   </div></div>
 </div>
 
@@ -386,7 +386,7 @@ new Chart(document.getElementById('chartDias'), {
     }
   }
 });
-const catData = [{"nome":"erro / bug","qtd":5,"pct":3,"cor":"#1A1A1A"},{"nome":"instabilidade","qtd":4,"pct":2,"cor":"#3D3D3D"},{"nome":"dúvida","qtd":0,"pct":0,"cor":"#6B0FCC"},{"nome":"formações e treinamentos","qtd":148,"pct":88,"cor":"#C084F5"},{"nome":"integração parceiro","qtd":2,"pct":1,"cor":"#E8167A"},{"nome":"priorização chamado","qtd":9,"pct":5,"cor":"#FCE4F1"}];
+const catData = [{"nome":"erro / bug","qtd":5,"pct":5,"cor":"#1A1A1A"},{"nome":"instabilidade","qtd":4,"pct":4,"cor":"#3D3D3D"},{"nome":"dúvida","qtd":0,"pct":0,"cor":"#6B0FCC"},{"nome":"formações e treinamentos","qtd":73,"pct":78,"cor":"#C084F5"},{"nome":"integração parceiro","qtd":2,"pct":2,"cor":"#E8167A"},{"nome":"priorização chamado","qtd":9,"pct":10,"cor":"#FCE4F1"}];
 new Chart(document.getElementById('chartCat'), {
   type: 'doughnut',
   data: { labels: catData.map(function(c){ return c.nome; }), datasets: [{ data: catData.map(function(c){ return c.pct; }), backgroundColor: catData.map(function(c){ return c.cor; }), borderWidth: 2, borderColor: '#fff' }] },
