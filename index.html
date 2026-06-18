@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">08/06/2026 a 14/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">18/06/2026 · 17:07h</div>
+      <div class="period-date">18/06/2026 · 17:33h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -168,11 +168,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <div class="alert-strip">
   <div class="alert-box red">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF de boletins indisponível - Amais/Pedag e Crescimento. Página permanece carregando e exibe mensagem de sem resposta. Impacta validação de notas.</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Portal Unimestre fora do ar afetando múltiplas escolas - Primeiro Mundo, Crescimento, Magnum, IDAAM, Over e Centro de Estudos sem acesso à plataforma e diários.</span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span>Sistema de geração de PDF de boletins indisponível na Amais/Pedag e Crescimento - página permanece carregando e exibe mensagem de sem resposta, impedindo processo de validação de notas</span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Portal Unimestre fora do ar afetando múltiplas escolas: Primeiro Mundo, Crescimento, Magnum, IDAAM e Centro de Estudos - impossibilidade de acesso aos diários e gestão</span></div>
   </div>
   <div class="alert-box amber">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span>Falha no acesso Softdesk - Over Zona Norte e Secretaria Fundamental com problemas de login e erro na aplicação mobile, enquanto acesso via web funciona.</span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span>Problemas recorrentes de autenticação no Softdesk na Amais/Pedag & Over Zona Norte e Amais/Pedag & Interação - acesso negado mesmo com credenciais corretas</span></div>
   </div>
 </div>
 
@@ -184,7 +184,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <div class="pri-num">1</div>
     <div>
       <div class="pri-text" style="font-weight:600;">Restaurar Portal Unimestre</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Plataforma fora do ar impedindo acesso de 6+ escolas aos diários e gestão. Afeta operações críticas.</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Restabelecer acesso imediato ao portal Unimestre que está completamente fora do ar, afetando 5+ escolas e impedindo acesso a diários e gestão</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
@@ -192,15 +192,15 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <div class="pri-num">2</div>
     <div>
       <div class="pri-text" style="font-weight:600;">Resolver geração de PDF de boletins</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Sistema de boletins não gera arquivos PDF. Necessário para processo de validação de notas em Amais/Pedag e Crescimento.</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Corrigir instabilidade no sistema de geração e download de boletins em PDF na Amais/Pedag e Crescimento - processo crítico para validação de notas</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Reabrir acesso de usuários no Softdesk</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Múltiplos usuários com problemas de autenticação. Erro persistente na aplicação mobile. Requer suporte de Infra.</div>
+      <div class="pri-text" style="font-weight:600;">Corrigir acesso ao Softdesk</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar falhas de autenticação recorrentes no Softdesk em Amais/Pedag & Over Zona Norte e Amais/Pedag & Interação</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
@@ -274,35 +274,36 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   </div>
 </div>
 
+<div class="row col-2" style="margin-bottom:14px;">
+  <div class="card">
+    <div class="sec"><div class="sec-dot"></div>produtos em destaque na semana</div>
+    <div style="display:flex;align-items:center;gap:16px;"><div style="width:180px;height:180px;flex-shrink:0;"><canvas id="chartProdutos"></canvas></div><div style="flex:1;"><div style="display:flex;align-items:center;gap:8px;padding:4px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:#6B0FCC;flex-shrink:0;"></div><span style="flex:1;">unimestre / portal</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-weight:600;">14</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">78%</span></div><div style="display:flex;align-items:center;gap:8px;padding:4px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:#E8167A;flex-shrink:0;"></div><span style="flex:1;">agenda+</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-weight:600;">4</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">22%</span></div></div></div>
+  </div>
+  <div class="card">
+    <div class="sec"><div class="sec-dot"></div>assuntos mais comentados nos grupos</div>
+    <div><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">boletins <span style="color:#9CA3AF;font-size:10px;">5x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">relatorio <span style="color:#9CA3AF;font-size:10px;">5x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">softdesk <span style="color:#9CA3AF;font-size:10px;">2x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">cadastro de turmas <span style="color:#9CA3AF;font-size:10px;">1x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">frequencia <span style="color:#9CA3AF;font-size:10px;">1x</span></span></div>
+  </div>
+</div>
+
 <div class="row col-2">
   <div class="card">
-    <div class="sec"><div class="sec-dot"></div>top 5 dúvidas da semana</div>
+    <div class="sec"><div class="sec-dot"></div>top 3 dúvidas da semana</div>
     <div style="font-size:10px;color:#9CA3AF;margin-bottom:10px;font-style:italic;">somente perguntas de uso — erros não incluídos</div>
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como gerar relatório de faltas com período e datas para aluno específico? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios Acadêmicos</span></div>
-    <div class="duvida-count">1x</div>
+    <div class="duvida-text">Como gerar e baixar boletins em PDF sem erro de carregamento? <span class="tag tag-roxo" style="margin-left:4px;">Sistema de Boletins</span></div>
+    <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">O que significam faltas em branco nos diários? <span class="tag tag-roxo" style="margin-left:4px;">Frequência</span></div>
-    <div class="duvida-count">1x</div>
+    <div class="duvida-text">Por que não consigo acessar o Softdesk mesmo com credenciais corretas? <span class="tag tag-roxo" style="margin-left:4px;">Autenticação/Acesso</span></div>
+    <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como resolver conflito de perfil de usuário (professor e responsável simultâneos)? <span class="tag tag-roxo" style="margin-left:4px;">Acesso e Permissões</span></div>
+    <div class="duvida-text">Como gerar relatório de faltas com período, datas e filtro por aluno para solicitação judicial? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
     <div class="duvida-count">1x</div>
-  </div>
-  <div class="duvida-item">
-    <div class="duvida-num">4</div>
-    <div class="duvida-text">Como matricular aluno do Integral para Regular quando sistema não permite avançar? <span class="tag tag-roxo" style="margin-left:4px;">Matrícula</span></div>
-    <div class="duvida-count">1x</div>
-  </div>
-  <div class="duvida-item">
-    <div class="duvida-num">5</div>
-    <div class="duvida-text">Por que o acesso Softdesk funciona via web mas não no app? <span class="tag tag-roxo" style="margin-left:4px;">Acesso Softdesk</span></div>
-    <div class="duvida-count">2x</div>
   </div>
   </div>
   <div class="card">
@@ -362,28 +363,17 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="sec"><div class="sec-dot"></div>insights da semana</div>
   <div class="insights-grid">
   <div class="insight-card">
-    <div class="insight-icon icon-red">⚠️</div>
-    <div><div class="insight-title">Instabilidade sistêmica em múltiplos módulos</div><div class="insight-text">Identificado padrão de falhas simultâneas em PDF de boletins, Portal Unimestre e acesso Softdesk. Pode indicar problema infraestrutural ou de servidores.</div></div>
+    <div class="insight-icon icon-red">🔴</div>
+    <div><div class="insight-title">Falha sistêmica em serviço crítico</div><div class="insight-text">Portal Unimestre apresenta indisponibilidade total afetando simultaneamente múltiplas escolas, indicando problema na infraestrutura central</div></div>
   </div>
   <div class="insight-card">
-    <div class="insight-icon icon-amber">📱</div>
-    <div><div class="insight-title">Problemas específicos em aplicação mobile</div><div class="insight-text">Erros restritos ao app Softdesk enquanto versão web funciona normalmente. Sugere incompatibilidade ou bug específico da aplicação mobile.</div></div>
+    <div class="insight-icon icon-amber">🟠</div>
+    <div><div class="insight-title">Padrão de problemas de autenticação</div><div class="insight-text">Recorrência de erros de login em diferentes módulos (Softdesk, App) sugere possível desincronização de credenciais ou integração com plataforma Inspira</div></div>
   </div>
   <div class="insight-card">
-    <div class="insight-icon icon-roxo">✅</div>
-    <div><div class="insight-title">Resoluções bem-sucedidas com orientação correta</div><div class="insight-text">Casos resolvidos quando orientações de navegação foram fornecidas (categoria em disciplina, acesso via outro caminho). Indica necessidade de melhor documentação de processos.</div></div>
+    <div class="insight-icon icon-roxo">🟣</div>
+    <div><div class="insight-title">Necessidade de comunicação melhorada</div><div class="insight-text">Múltiplas escolas reportando mesmos problemas simultaneamente sem resposta centralizada, indicando necessidade de notificação prévia sobre indisponibilidades e status updates</div></div>
   </div></div>
-</div>
-
-<div class="row col-2" style="margin-bottom:14px;">
-  <div class="card">
-    <div class="sec"><div class="sec-dot"></div>produtos em destaque na semana</div>
-    <div style="display:flex;align-items:center;gap:16px;"><div style="width:180px;height:180px;flex-shrink:0;"><canvas id="chartProdutos"></canvas></div><div style="flex:1;"><div style="display:flex;align-items:center;gap:8px;padding:4px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:#6B0FCC;flex-shrink:0;"></div><span style="flex:1;">unimestre / portal</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-weight:600;">14</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">78%</span></div><div style="display:flex;align-items:center;gap:8px;padding:4px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:#E8167A;flex-shrink:0;"></div><span style="flex:1;">agenda+</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-weight:600;">4</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">22%</span></div></div></div>
-  </div>
-  <div class="card">
-    <div class="sec"><div class="sec-dot"></div>assuntos mais comentados nos grupos</div>
-    <div><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">boletins <span style="color:#9CA3AF;font-size:10px;">5x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">relatorio <span style="color:#9CA3AF;font-size:10px;">5x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">softdesk <span style="color:#9CA3AF;font-size:10px;">2x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">cadastro de turmas <span style="color:#9CA3AF;font-size:10px;">1x</span></span><span style="display:inline-block;margin:3px;padding:4px 10px;background:#EDE0FA;color:#6B0FCC;border-radius:20px;font-size:11px;font-weight:500;">frequencia <span style="color:#9CA3AF;font-size:10px;">1x</span></span></div>
-  </div>
 </div>
 
 <div class="footer"><span>amais educação</span> · atendimento whatsapp inspira · gerado automaticamente via n8n + claude</div>
