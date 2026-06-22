@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">15/06/2026 a 21/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">22/06/2026 · 20:07h</div>
+      <div class="period-date">22/06/2026 · 20:42h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -167,50 +167,48 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   </div>
 </div></div>
 
-<div class="alert-strip">
-  <div class="alert-box red">
+<div style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;">
+  <div class="alert-box red" style="border-radius:12px;border:1px solid var(--borda);border-left:4px solid var(--vermelho);padding:16px 20px;background:var(--branco);">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Boletim não exibe nota lançada</strong> <span style="color:#6B0FCC;font-weight:600;">— Interação</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Divergência carga horária após layout</strong> <span style="color:#6B0FCC;font-weight:600;">— Simbios</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Notas não aparecem em boletim</strong> <span style="color:#6B0FCC;font-weight:600;">— 8º e 9º anos</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Aulas duplicadas divergem contagem</strong> <span style="color:#6B0FCC;font-weight:600;">— múltiplas escolas</span></span></div>
   </div>
-  <div class="alert-box amber">
+  <div class="alert-box amber" style="border-radius:12px;border:1px solid var(--borda);border-left:4px solid var(--amarelo);padding:16px 20px;background:var(--branco);">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span><strong style="color:#1A1A1A;">Acesso colaborador indisponível</strong> <span style="color:#6B0FCC;font-weight:600;">— Over</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span><strong style="color:#1A1A1A;">Acesso professor inexistente</strong> <span style="color:#6B0FCC;font-weight:600;">— Over</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
   </div>
 </div>
 
-<div class="row col-32">
-  <div class="card">
-    <div class="sec"><div class="sec-dot"></div>top 3 prioridades da semana</div>
-    
+<div class="card" style="margin-bottom:14px;">
+  <div class="sec"><div class="sec-dot"></div>top 3 prioridades da semana</div>
+  
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
       <div class="pri-text" style="font-weight:600;">Resolver exibição notas boletim</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar erro de exibição de avaliações nas turmas 8º e 9º que não aparecem no boletim apesar de lançadas e calculadas corretamente.</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Corrigir erro de exibição que impede visualização de notas lançadas em turmas específicas, afetando cálculo de média e recuperação.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Automatizar desmembramento aulas duplicadas</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar solução em chamado para desagrupar frequências duplicadas e duplicar linhas de conteúdo em diários, evitando processamento manual em múltiplas turmas.</div>
+      <div class="pri-text" style="font-weight:600;">Padronizar contagem aulas duplicadas</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar solução única para aulas ministradas múltiplas vezes no mesmo dia, evitando discrepâncias entre relatórios e inspeção escolar.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Padronizar acesso de responsáveis pedagógicos</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Criar processo claro para atribuir responsável pedagógico em Agenda+ independente de responsável financeiro, permitindo múltiplos acessos por aluno.</div>
+      <div class="pri-text" style="font-weight:600;">Automatizar ajustes diário em lote</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Criar funcionalidade para corrigir frequências e conteúdos duplicados em múltiplas turmas/disciplinas simultaneamente via chamado.</div>
       <span class="tag ">acompanhar</span>
     </div>
   </div>
-  </div>
-  <div class="card">
-    <div class="sec"><div class="sec-dot"></div>interações por dia</div>
-    <div class="chart-wrap chart-h180"><canvas id="chartDias"></canvas></div>
-  </div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+  <div class="sec"><div class="sec-dot"></div>interações por dia</div>
+  <div class="chart-wrap chart-h180"><canvas id="chartDias"></canvas></div>
 </div>
 
 <div class="row col-23">
@@ -268,10 +266,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   </div>
   <div class="card">
     <div class="sec"><div class="sec-dot"></div>categorias da semana</div>
-    <div style="display:flex;align-items:center;gap:16px;">
-      <div class="chart-wrap chart-h200" style="width:190px;flex-shrink:0;"><canvas id="chartCat"></canvas></div>
-      <div id="cat-legenda" style="flex:1;min-width:0;"></div>
-    </div>
+    <div id="cat-barras" style="display:flex;flex-direction:column;gap:6px;margin-top:4px;"></div>
     <div style="margin-top:12px;padding:10px 12px;background:#F3F4F6;border-radius:8px;font-size:11px;color:#6B7280;border-left:3px solid #D1D5DB;">💡 <strong>amais connect:</strong> nenhuma solicitação esta semana</div>
   </div>
 </div>
@@ -294,17 +289,17 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como lançar notas fechadas do 2º bimestre? <span class="tag tag-roxo" style="margin-left:4px;">Notas e Avaliações</span></div>
+    <div class="duvida-text">Como lançar nota fechada quando há parciais duplicadas? <span class="tag tag-roxo" style="margin-left:4px;">Notas e Boletim</span></div>
     <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">Por que médias não aparecem em turmas específicas? <span class="tag tag-roxo" style="margin-left:4px;">Cálculo de Médias</span></div>
+    <div class="duvida-text">Como ajustar cadastros de alunos trocados e notas associadas? <span class="tag tag-roxo" style="margin-left:4px;">Matricula e Dados</span></div>
     <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como resgatar notas de aluno com matrícula cancelada? <span class="tag tag-roxo" style="margin-left:4px;">Histórico e Transferências</span></div>
+    <div class="duvida-text">Como emitir boletim de aluno transferido com matrícula cancelada? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
     <div class="duvida-count">1x</div>
   </div>
   </div>
@@ -409,19 +404,19 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <span>😡 frustrado</span><span>😐 neutro</span><span>😄 satisfeito</span>
     </div>
     <div style="position:relative;height:10px;background:linear-gradient(to right,#EF4444,#F59E0B,#10B981);border-radius:10px;">
-      <div style="position:absolute;top:-4px;width:18px;height:18px;background:white;border:2px solid #6B0FCC;border-radius:50%;transform:translateX(-50%);left:50%"></div>
+      <div style="position:absolute;top:-4px;width:18px;height:18px;background:white;border:2px solid #6B0FCC;border-radius:50%;transform:translateX(-50%);left:60%"></div>
     </div>
     <div style="text-align:center;margin-top:12px;">
-      <span style="font-size:24px;">😐</span>
-      <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">neutro</span>
-      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Suporte responsivo resolve problemas operacionais, mas escolas enfrentam frustração com soluções manuais, falhas de exibição em boletins e pendências não automatizadas que impactam múltiplas turmas e certificados.</p>
-      <p style="font-size:10px;color:#9CA3AF;margin:8px 0 0 0;font-family:monospace;">scores: Interação: -2 | Canadense ECB: -1 | Anchieta / CSP: -1 | Simbios: 0 | Over: 1 | Magnum: 2 | média: -0.17</p>
+      <span style="font-size:24px;">🙂</span>
+      <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">ok</span>
+      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Escolas enfrentam problemas técnicos significativos (notas, aulas duplicadas, cadastros) com suporte responsivo mas soluções parciais; Interação particularmente frustrada com processos manuais demorados impactando certificados.</p>
+      <p style="font-size:10px;color:#9CA3AF;margin:8px 0 0 0;font-family:monospace;">scores: Interação: -2 | Anchieta/CSP: -1 | Canadense ECB: 0 | Simbios: 1 | Over: 2 | Magnum: 3 | média: 0.50</p>
     </div>
   </div>
 
   <div style="border-top:0.5px solid #E5E7EB;padding-top:14px;">
     <div style="display:flex;flex-wrap:wrap;gap:8px;">
-      <div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEE2E2;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#991B1B;">Interação</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#92400E;">Canadense ECB</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#92400E;">Anchieta / CSP</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#F3F4F6;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#374151;">Simbios</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#ECFDF5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Over</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">😊</span><span style="font-size:12px;font-weight:600;color:#065F46;">Magnum</span></div>
+      <div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEE2E2;border-radius:20px;"><span style="font-size:16px;">😤</span><span style="font-size:12px;font-weight:600;color:#991B1B;">Interação</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#92400E;">Anchieta/CSP</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#F3F4F6;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#374151;">Canadense ECB</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#ECFDF5;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#065F46;">Simbios</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Over</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Magnum</span></div>
     </div>
   </div>
 </div>
@@ -435,7 +430,7 @@ const diasData = [0,48,56,27,68,0,0];
 const diasColors = ["#EDE0FA","#EDE0FA","#EDE0FA","#EDE0FA","#6B0FCC","#EDE0FA","#EDE0FA"];
 new Chart(document.getElementById('chartDias'), {
   type: 'bar',
-  data: { labels: ['seg','ter','qua','qui','sex','sab','dom'], datasets: [{ data: diasData, backgroundColor: diasColors, borderRadius: 6, borderSkipped: false }] },
+  data: { labels: ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'], datasets: [{ data: diasData, backgroundColor: diasColors, borderRadius: 6, borderSkipped: false }] },
   options: {
     responsive: true, maintainAspectRatio: false,
     plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx) { return ctx.parsed.y + ' mensagens'; } } } },
@@ -446,14 +441,20 @@ new Chart(document.getElementById('chartDias'), {
   }
 });
 const catData = [{"nome":"erro / bug","qtd":8,"pct":4,"cor":"#1A1A1A"},{"nome":"acesso / senha","qtd":10,"pct":5,"cor":"#F97316"},{"nome":"instabilidade","qtd":1,"pct":1,"cor":"#3D3D3D"},{"nome":"priorização chamado","qtd":19,"pct":10,"cor":"#FCE4F1"},{"nome":"outros","qtd":161,"pct":81,"cor":"#E5E7EB"}];
-new Chart(document.getElementById('chartCat'), {
-  type: 'doughnut',
-  data: { labels: catData.map(function(c){ return c.nome; }), datasets: [{ data: catData.map(function(c){ return c.pct; }), backgroundColor: catData.map(function(c){ return c.cor; }), borderWidth: 2, borderColor: '#fff' }] },
-  options: {
-    responsive: true, maintainAspectRatio: false, cutout: '65%',
-    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx) { const c = catData[ctx.dataIndex]; return c.nome + ': ' + c.qtd + ' msgs (' + c.pct + '%)'; } } } }
-  }
-});
+const maxCat = catData.length > 0 ? Math.max.apply(null, catData.map(function(c){return c.qtd;})) : 1;
+const catBarras = document.getElementById('cat-barras');
+if (catBarras) {
+  catData.sort(function(a,b){return b.qtd-a.qtd;}).forEach(function(c) {
+    const pct = Math.round(c.qtd/maxCat*100);
+    catBarras.innerHTML += '<div style="display:grid;grid-template-columns:140px 1fr 32px 28px;align-items:center;gap:8px;padding:4px 0;">'
+      + '<span style="font-size:11px;color:#374151;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">'+c.nome+'</span>'
+      + '<div style="height:8px;background:#F3F4F6;border-radius:4px;overflow:hidden;">'
+      + '<div style="height:100%;width:'+pct+'%;background:'+c.cor+';border-radius:4px;transition:width 0.4s;"></div></div>'
+      + '<span style="font-size:10px;font-family:DM Mono,monospace;color:#6B0FCC;font-weight:600;text-align:right;">'+c.qtd+'</span>'
+      + '<span style="font-size:10px;font-family:DM Mono,monospace;color:#9CA3AF;text-align:right;">'+c.pct+'%</span>'
+      + '</div>';
+  });
+}
 // Gráfico de produtos
 const prodData = [{"nome":"unimestre / portal","qtd":53,"pct":93},{"nome":"agenda+","qtd":2,"pct":4},{"nome":"estuda+","qtd":2,"pct":4}];
 const coresProd = {'unimestre':'#6B0FCC','agenda+':'#E8167A','aplus':'#F97316','estuda+':'#10B981','portal online':'#3B82F6'};
@@ -478,10 +479,7 @@ if (prodData.length > 0 && document.getElementById('chartProdutos')) {
   });
 }
 
-const leg = document.getElementById('cat-legenda');
-catData.forEach(function(c) {
-  leg.innerHTML += '<div style="display:flex;align-items:center;gap:6px;padding:3px 0;font-size:11px;color:#374151;"><div style="width:8px;height:8px;border-radius:2px;background:'+c.cor+';flex-shrink:0;"></div><span style="flex:1;">'+c.nome+'</span><span style="font-family:DM Mono,monospace;color:#6B0FCC;font-size:10px;font-weight:600;">'+c.qtd+'</span><span style="font-family:DM Mono,monospace;color:#9CA3AF;font-size:10px;margin-left:4px;">'+c.pct+'%</span></div>';
-});
+// legenda removida — substituída por barras horizontais
 </script>
 </body>
 </html>
