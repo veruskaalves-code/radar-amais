@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">15/06/2026 a 21/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">22/06/2026 · 13:01h</div>
+      <div class="period-date">22/06/2026 · 19:29h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -141,7 +141,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="kpi-label">total de interações</div>
       <div class="kpi-value grad">199</div>
       
-      <div class="kpi-sub">11 grupos de 29 (38% de engajamento)</div>
+      <div class="kpi-sub" style="color:#EF4444;">11 de 29 grupos (38% de engajamento)</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">dia mais ativo</div>
@@ -160,9 +160,9 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     </div>
     <div class="kpi-card">
       <div class="kpi-label">taxa de resposta · time amais</div>
-      <div class="kpi-value grad">38%</div>
+      <div class="kpi-value grad" style="font-size:24px;">91%</div>
       
-      <div class="kpi-sub danger">11 de 29 grupos respondidos pelo time amais</div>
+      <div class="kpi-sub" style="color:#10B981;">10 de 11 grupos ativos respondidos pelo time</div>
     </div>
   </div>
 </div></div>
@@ -170,11 +170,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <div class="alert-strip">
   <div class="alert-box red">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span>Inconsistência crítica na contagem de aulas - divergência entre dias letivos (7) e relatório de resultados (9) <span style="color:#6B0FCC;font-weight:600;"> — Interação</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Aluno 38001640 (KarlMax Soares dos Santos Albuquerque) com acesso incorreto - turma/cursinho desconfigurado no Unimestre <span style="color:#6B0FCC;font-weight:600;"> — Over</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span>Inconsistência na contagem de aulas do diário <span style="color:#6B0FCC;font-weight:600;"> — Interação - com risco de certificados não serem emitidos. Problema: aulas duplicadas (CC) reduzem contagem de 9 para 7 aulas, abaixo do mínimo exigido (40 aulas em Sociologia). Solução manual é demorada e afeta múltiplas turmas e segmentos.</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Notas não exibem corretamente no boletim <span style="color:#6B0FCC;font-weight:600;"> — Interação, Canadense ECB - afetando alunos em recuperação. Duas Inter 3 da mesma professora aparecem duplicadas para mesma turma (8º e 9º). Erro de exibição mesmo com cálculo de média correto.</span></span></div>
   </div>
   <div class="alert-box amber">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span>Notas não exibidas no boletim apesar de lançadas - falha de exibição em turmas de 8º e 9º com duas Inter 3 para mesma professora <span style="color:#6B0FCC;font-weight:600;"> — Interação</span></span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span>Cadastros de alunos trocados com notas lançadas incorretamente <span style="color:#6B0FCC;font-weight:600;"> — Anchieta/CSP - Alunos João Gabriel Tiba e João Pedro Magalhães (9º Ano, Patamares). Registros foram trocados mas incerteza se correção foi completa.</span></span></div>
   </div>
 </div>
 
@@ -185,25 +185,25 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Corrigir inconsistência na contagem de aulas do diário</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Ajustar sistema para contar aulas por dia (7 dias) em vez de duplicar quando há múltiplas aulas na mesma data. Impacta entrega de certificados. Requer validação com inspeção escolar sobre tratamento de aulas 'CC' (duplicadas) e possível desagrupamento de frequências.</div>
+      <div class="pri-text" style="font-weight:600;">Solução para aulas duplicadas no diário</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar funcionalidade de desmembramento automático de frequências duplicadas e duplicação de linhas de conteúdo para bater contagem de aulas. Afeta múltiplas turmas/segmentos e impede emissão de certificados.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Resolver erro de exibição de notas no boletim</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar por que notas lançadas não aparecem no boletim de alguns alunos (turmas 8º e 9º), especialmente com duplicação de Inter 3. Cálculo de média funciona, problema é apenas visual.</div>
+      <div class="pri-text" style="font-weight:600;">Corrigir exibição de notas duplicadas no boletim</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar erro de exibição onde duas Inter 3 da mesma professora aparecem na mesma turma (8º e 9º). Confirmar se é apenas visual ou se afeta cálculo de média. Aluno em recuperação depende dessa informação.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Resgatar notas de aluno transferido (RA 036001181)</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Recuperar boletim/notas de Rodrigo Gomes Cesar de Albuquerque que cursou 1º bimestre e foi transferido. Matrícula consta como cancelada, impossibilitando acesso ao perfil.</div>
-      <span class="tag ">acompanhar</span>
+      <div class="pri-text" style="font-weight:600;">Validar correção de cadastros trocados</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Anchieta/CSP trocou registros de João Gabriel Tiba e João Pedro Magalhães (9º Ano). Necessário confirmar se todas as notas foram realocadas corretamente ou se reprocessamento é necessário.</div>
+      <span class="tag tag-red">urgente</span>
     </div>
   </div>
   </div>
@@ -294,18 +294,18 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como lançar notas fechadas no sistema quando há notas parciais de avaliações lançadas pelos professores? <span class="tag tag-roxo" style="margin-left:4px;">Lançamento de Notas</span></div>
+    <div class="duvida-text">Como lançar notas fechadas do bimestre (2º bimestre) quando professores já lançaram notas parciais? <span class="tag tag-roxo" style="margin-left:4px;">Lançamento de Notas</span></div>
     <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">Como adicionar responsável pedagógico (mãe) com acesso ao Agenda+ quando há dois responsáveis? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de Acesso</span></div>
-    <div class="duvida-count">2x</div>
+    <div class="duvida-text">Como resolver aulas duplicadas no diário e ajustar contagem de aulas/conteúdos? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de Diário</span></div>
+    <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como resolver erro ao resetar senha de responsável? <span class="tag tag-roxo" style="margin-left:4px;">Acesso e Credenciais</span></div>
-    <div class="duvida-count">1x</div>
+    <div class="duvida-text">Como emitir documentos/boletim de alunos com matrícula cancelada ou transferida? <span class="tag tag-roxo" style="margin-left:4px;">Histórico de Alunos</span></div>
+    <div class="duvida-count">2x</div>
   </div>
   </div>
   <div class="card">
@@ -349,7 +349,10 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="top3-card top1">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
       <div class="top3-rank">atenção máxima</div>
-      <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+      <div style="text-align:right;">
+        <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+
+      </div>
     </div>
     <div class="top3-nome">Interação</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--vermelho);"></div>83 interações na semana</div>
@@ -359,7 +362,10 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="top3-card top2">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
       <div class="top3-rank">atenção elevada</div>
-      <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+      <div style="text-align:right;">
+        <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+
+      </div>
     </div>
     <div class="top3-nome">Over</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--amarelo);"></div>36 interações na semana</div>
@@ -369,7 +375,10 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="top3-card top3">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
       <div class="top3-rank">monitoramento</div>
-      <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+      <div style="text-align:right;">
+        <div style="text-align:right;"><div style="font-size:20px;font-weight:700;color:#EF4444;line-height:1;">8<span style="font-size:10px;color:#9CA3AF;font-weight:400;">/10</span></div><div style="font-size:9px;color:#EF4444;font-weight:600;margin-top:1px;">🔴 situação crítica</div></div>
+
+      </div>
     </div>
     <div class="top3-nome">Simbios</div>
     <div class="top3-stat"><div class="top3-bullet" style="background:var(--roxo);"></div>27 interações na semana</div>
@@ -388,18 +397,30 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 
 <!-- mapa de silêncio removido desta versão -->
 
+<!-- insights removidos -->
+
+
 <div class="card" style="margin-bottom:14px;">
-  <div class="sec"><div class="sec-dot"></div>insights da semana</div>
-  <div class="insights-grid"><div class="insight-card">
-    <div class="insight-icon icon-roxo">🟣</div>
-    <div><div class="insight-title"></div><div class="insight-text">Processo manual de ajuste de aulas duplicadas é muito demorado e afeta múltiplas turmas e segmentos (Interação relata que impacta todas as turmas/segmentos, mas nem todas as disciplinas). Necessário automatizar ou oferecer ferramenta em lote.</div></div>
-  </div><div class="insight-card">
-    <div class="insight-icon icon-roxo">🟣</div>
-    <div><div class="insight-title"></div><div class="insight-text">Relatório de Apuração de Resultados Finais mostrava 9 aulas enquanto relatório por dias letivos mostrava 7 dias - divergência crítica que pode levar à devolução do diário pela inspeção. Sociologia requer mínimo de 40 aulas.</div></div>
-  </div><div class="insight-card">
-    <div class="insight-icon icon-roxo">🟣</div>
-    <div><div class="insight-title"></div><div class="insight-text">3 escolas (Over, Simbios, Canadense ECB) reportaram problemas com exibição de notas/médias no boletim e relatórios, sugerindo falha sistêmica na renderização ou cálculo, não apenas em casos isolados.</div></div>
-  </div></div>
+  <div class="sec"><div class="sec-dot" style="background:#6B0FCC;"></div>termômetro de sentimento da rede</div>
+  <div style="font-size:10px;color:#9CA3AF;margin-bottom:16px;font-style:italic;">como as escolas se sentiram esta semana com base no tom das mensagens</div>
+
+  <div style="margin-bottom:20px;">
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:#9CA3AF;margin-bottom:6px;">
+      <span>😡 frustrado</span><span>😐 neutro</span><span>😄 satisfeito</span>
+    </div>
+    <div style="position:relative;height:10px;background:linear-gradient(to right,#EF4444,#F59E0B,#10B981);border-radius:10px;">
+      <div style="position:absolute;top:-4px;width:18px;height:18px;background:white;border:2px solid #6B0FCC;border-radius:50%;transform:translateX(-50%);left:50%"></div>
+    </div>
+    <div style="text-align:center;margin-top:12px;">
+      <span style="font-size:24px;">😐</span>
+      <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">neutro</span>
+      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Clima tenso com problemas técnicos estruturais (aulas duplicadas, notas duplicadas) sem soluções rápidas. Algumas escolas recebem orientações e resolvem, mas outras enfrentam frustração com processos manuais longos ou incerteza quanto às correções realizadas.</p>
+    </div>
+  </div>
+
+  <div style="border-top:0.5px solid #E5E7EB;padding-top:12px;display:flex;flex-direction:column;gap:6px;">
+    <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😤</span><span style="font-size:11px;color:#6B7280;min-width:110px;">frustrado</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Interação</span></div><div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😟</span><span style="font-size:11px;color:#6B7280;min-width:110px;">insatisfeito</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Anchieta / CSP</span></div><div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😐</span><span style="font-size:11px;color:#6B7280;min-width:110px;">neutro</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Over, Magnum, Simbios, Canadense ECB</span></div>
+  </div>
 </div>
 
 <div class="footer"><span>amais educação</span> · atendimento whatsapp inspira · gerado automaticamente via n8n + claude</div>
