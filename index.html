@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">15/06/2026 a 21/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">22/06/2026 · 19:29h</div>
+      <div class="period-date">22/06/2026 · 19:58h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -170,11 +170,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <div class="alert-strip">
   <div class="alert-box red">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span>Inconsistência na contagem de aulas do diário <span style="color:#6B0FCC;font-weight:600;"> — Interação - com risco de certificados não serem emitidos. Problema: aulas duplicadas (CC) reduzem contagem de 9 para 7 aulas, abaixo do mínimo exigido (40 aulas em Sociologia). Solução manual é demorada e afeta múltiplas turmas e segmentos.</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span>Notas não exibem corretamente no boletim <span style="color:#6B0FCC;font-weight:600;"> — Interação, Canadense ECB - afetando alunos em recuperação. Duas Inter 3 da mesma professora aparecem duplicadas para mesma turma (8º e 9º). Erro de exibição mesmo com cálculo de média correto.</span></span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Aulas duplicadas impactam contagem</strong> <span style="color:#6B0FCC;font-weight:600;">— Simbios</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Notas não exibem em boletim</strong> <span style="color:#6B0FCC;font-weight:600;">— Canadense ECB, Interação</span></span></div>
   </div>
   <div class="alert-box amber">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span>Cadastros de alunos trocados com notas lançadas incorretamente <span style="color:#6B0FCC;font-weight:600;"> — Anchieta/CSP - Alunos João Gabriel Tiba e João Pedro Magalhães (9º Ano, Patamares). Registros foram trocados mas incerteza se correção foi completa.</span></span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span><strong style="color:#1A1A1A;">Acesso professor não habilitado</strong> <span style="color:#6B0FCC;font-weight:600;">— Over</span></span></div>
   </div>
 </div>
 
@@ -185,25 +185,25 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Solução para aulas duplicadas no diário</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar funcionalidade de desmembramento automático de frequências duplicadas e duplicação de linhas de conteúdo para bater contagem de aulas. Afeta múltiplas turmas/segmentos e impede emissão de certificados.</div>
+      <div class="pri-text" style="font-weight:600;">Resolver duplicação aulas diário</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar desmembramento de frequências duplicadas e duplicação de linhas de conteúdo para corrigir contagem de aulas e evitar devolução de diários pela inspeção.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Corrigir exibição de notas duplicadas no boletim</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar erro de exibição onde duas Inter 3 da mesma professora aparecem na mesma turma (8º e 9º). Confirmar se é apenas visual ou se afeta cálculo de média. Aluno em recuperação depende dessa informação.</div>
+      <div class="pri-text" style="font-weight:600;">Corrigir exibição notas boletim</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar erro de exibição parcial de avaliações no boletim que afeta turmas 8º e 9º e impacta análise de recuperação de alunos.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Validar correção de cadastros trocados</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Anchieta/CSP trocou registros de João Gabriel Tiba e João Pedro Magalhães (9º Ano). Necessário confirmar se todas as notas foram realocadas corretamente ou se reprocessamento é necessário.</div>
-      <span class="tag tag-red">urgente</span>
+      <div class="pri-text" style="font-weight:600;">Habilitar acesso colaboradores</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Validar processo de cadastro e ativação de colaboradores no menu Pessoas/Colaboradores para que login via e-mail institucional funcione corretamente.</div>
+      <span class="tag ">acompanhar</span>
     </div>
   </div>
   </div>
@@ -294,18 +294,18 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como lançar notas fechadas do bimestre (2º bimestre) quando professores já lançaram notas parciais? <span class="tag tag-roxo" style="margin-left:4px;">Lançamento de Notas</span></div>
+    <div class="duvida-text">Como lançar nota fechada do 2º bimestre? <span class="tag tag-roxo" style="margin-left:4px;">Lançamento de notas</span></div>
     <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">Como resolver aulas duplicadas no diário e ajustar contagem de aulas/conteúdos? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de Diário</span></div>
-    <div class="duvida-count">3x</div>
+    <div class="duvida-text">Como desagrupar aulas duplicadas no diário? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de diário</span></div>
+    <div class="duvida-count">2x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como emitir documentos/boletim de alunos com matrícula cancelada ou transferida? <span class="tag tag-roxo" style="margin-left:4px;">Histórico de Alunos</span></div>
-    <div class="duvida-count">2x</div>
+    <div class="duvida-text">Qual relatório usar para boletim de 2024? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
+    <div class="duvida-count">1x</div>
   </div>
   </div>
   <div class="card">
@@ -414,12 +414,15 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     <div style="text-align:center;margin-top:12px;">
       <span style="font-size:24px;">😐</span>
       <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">neutro</span>
-      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Clima tenso com problemas técnicos estruturais (aulas duplicadas, notas duplicadas) sem soluções rápidas. Algumas escolas recebem orientações e resolvem, mas outras enfrentam frustração com processos manuais longos ou incerteza quanto às correções realizadas.</p>
+      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Clima de dúvida e espera por resoluções. Escolas enfrentam problemas técnicos variados com atendimento contínuo, mas várias pendências críticas sem resolução rápida geram insatisfação moderada, especialmente em Simbios.</p>
+      <p style="font-size:10px;color:#9CA3AF;margin:8px 0 0 0;font-family:monospace;">scores: Simbios: -2 | Over: -1 | Interação: 0 | Canadense ECB: 1 | Magnum: 2 | Anchieta / CSP: -1 | média: -0.17</p>
     </div>
   </div>
 
-  <div style="border-top:0.5px solid #E5E7EB;padding-top:12px;display:flex;flex-direction:column;gap:6px;">
-    <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😤</span><span style="font-size:11px;color:#6B7280;min-width:110px;">frustrado</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Interação</span></div><div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😟</span><span style="font-size:11px;color:#6B7280;min-width:110px;">insatisfeito</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Anchieta / CSP</span></div><div style="display:flex;align-items:center;gap:8px;"><span style="font-size:14px;min-width:22px;">😐</span><span style="font-size:11px;color:#6B7280;min-width:110px;">neutro</span><span style="font-size:11px;color:#1A1A1A;font-weight:500;">Over, Magnum, Simbios, Canadense ECB</span></div>
+  <div style="border-top:0.5px solid #E5E7EB;padding-top:14px;">
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+      <div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEE2E2;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#991B1B;">Simbios</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#92400E;">Over</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#F3F4F6;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#374151;">Interação</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#ECFDF5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Canadense ECB</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">😊</span><span style="font-size:12px;font-weight:600;color:#065F46;">Magnum</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#92400E;">Anchieta / CSP</span></div>
+    </div>
   </div>
 </div>
 
@@ -442,7 +445,7 @@ new Chart(document.getElementById('chartDias'), {
     }
   }
 });
-const catData = [{"nome":"erro / bug","qtd":8,"pct":4,"cor":"#1A1A1A"},{"nome":"acesso / senha","qtd":10,"pct":5,"cor":"#F97316"},{"nome":"instabilidade","qtd":1,"pct":1,"cor":"#3D3D3D"},{"nome":"dúvida","qtd":0,"pct":0,"cor":"#6B0FCC"},{"nome":"formações e treinamentos","qtd":0,"pct":0,"cor":"#C084F5"},{"nome":"integração parceiro","qtd":0,"pct":0,"cor":"#E8167A"},{"nome":"priorização chamado","qtd":19,"pct":10,"cor":"#FCE4F1"},{"nome":"outros","qtd":161,"pct":81,"cor":"#E5E7EB"}];
+const catData = [{"nome":"erro / bug","qtd":8,"pct":4,"cor":"#1A1A1A"},{"nome":"acesso / senha","qtd":10,"pct":5,"cor":"#F97316"},{"nome":"instabilidade","qtd":1,"pct":1,"cor":"#3D3D3D"},{"nome":"priorização chamado","qtd":19,"pct":10,"cor":"#FCE4F1"},{"nome":"outros","qtd":161,"pct":81,"cor":"#E5E7EB"}];
 new Chart(document.getElementById('chartCat'), {
   type: 'doughnut',
   data: { labels: catData.map(function(c){ return c.nome; }), datasets: [{ data: catData.map(function(c){ return c.pct; }), backgroundColor: catData.map(function(c){ return c.cor; }), borderWidth: 2, borderColor: '#fff' }] },
