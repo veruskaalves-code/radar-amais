@@ -133,7 +133,7 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <div class="period-label">período</div>
       <div class="period-date">15/06/2026 a 21/06/2026</div>
       <div class="period-label" style="margin-top:8px;">gerado em</div>
-      <div class="period-date">22/06/2026 · 20:42h</div>
+      <div class="period-date">26/06/2026 · 13:45h</div>
     </div>
   </div>
   <div class="kpi-grid">
@@ -170,11 +170,11 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
 <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;">
   <div class="alert-box red" style="border-radius:12px;border:1px solid var(--borda);border-left:4px solid var(--vermelho);padding:16px 20px;background:var(--branco);">
     <div class="alert-head" style="color:#DC2626;"><div class="dot dot-r"></div>problemas críticos</div>
-    <div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Notas não aparecem em boletim</strong> <span style="color:#6B0FCC;font-weight:600;">— 8º e 9º anos</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Aulas duplicadas divergem contagem</strong> <span style="color:#6B0FCC;font-weight:600;">— múltiplas escolas</span></span></div>
+    <div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Aulas duplicadas afetam contagem</strong> <span style="color:#6B0FCC;font-weight:600;">— Simbios</span></span></div><div class="alert-item"><div class="dot dot-r ait"></div><span><strong style="color:#1A1A1A;">Notas não exibem em boletim</strong> <span style="color:#6B0FCC;font-weight:600;">— Interação, Canadense ECB</span></span></div>
   </div>
   <div class="alert-box amber" style="border-radius:12px;border:1px solid var(--borda);border-left:4px solid var(--amarelo);padding:16px 20px;background:var(--branco);">
     <div class="alert-head" style="color:#D97706;"><div class="dot dot-a"></div>pontos de atenção</div>
-    <div class="alert-item"><div class="dot dot-a ait"></div><span><strong style="color:#1A1A1A;">Acesso professor inexistente</strong> <span style="color:#6B0FCC;font-weight:600;">— Over</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
+    <div class="alert-item"><div class="dot dot-a ait"></div><span><strong style="color:#1A1A1A;">Acesso professor negado</strong> <span style="color:#6B0FCC;font-weight:600;">— Over</span> <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#D1FAE5;color:#065F46;font-weight:500;margin-left:6px;">✓ resolvido</span></span></div>
   </div>
 </div>
 
@@ -184,24 +184,24 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
   <div class="pri-item">
     <div class="pri-num">1</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Resolver exibição notas boletim</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Corrigir erro de exibição que impede visualização de notas lançadas em turmas específicas, afetando cálculo de média e recuperação.</div>
+      <div class="pri-text" style="font-weight:600;">Resolver duplicação aulas diário</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar desmembramento de aulas duplicadas e ajuste de contagem para que relatórios reflitam quantidade correta de aulas ministradas.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">2</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Padronizar contagem aulas duplicadas</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Implementar solução única para aulas ministradas múltiplas vezes no mesmo dia, evitando discrepâncias entre relatórios e inspeção escolar.</div>
+      <div class="pri-text" style="font-weight:600;">Corrigir exibição notas boletim</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Investigar erro de exibição de avaliações em boletins (especialmente Inter 3) onde nota está lançada mas não aparece para aluno.</div>
       <span class="tag tag-red">urgente</span>
     </div>
   </div>
   <div class="pri-item">
     <div class="pri-num">3</div>
     <div>
-      <div class="pri-text" style="font-weight:600;">Automatizar ajustes diário em lote</div>
-      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Criar funcionalidade para corrigir frequências e conteúdos duplicados em múltiplas turmas/disciplinas simultaneamente via chamado.</div>
+      <div class="pri-text" style="font-weight:600;">Padronizar relatório histórico EM</div>
+      <div class="pri-text" style="margin-top:3px;color:#6B7280;">Corrigir formatação e informações faltantes em relatório de histórico do Ensino Médio.</div>
       <span class="tag ">acompanhar</span>
     </div>
   </div>
@@ -289,18 +289,18 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
     
   <div class="duvida-item">
     <div class="duvida-num">1</div>
-    <div class="duvida-text">Como lançar nota fechada quando há parciais duplicadas? <span class="tag tag-roxo" style="margin-left:4px;">Notas e Boletim</span></div>
+    <div class="duvida-text">Como lançar nota fechada no sistema? <span class="tag tag-roxo" style="margin-left:4px;">Lançamento de Notas</span></div>
     <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">2</div>
-    <div class="duvida-text">Como ajustar cadastros de alunos trocados e notas associadas? <span class="tag tag-roxo" style="margin-left:4px;">Matricula e Dados</span></div>
-    <div class="duvida-count">2x</div>
+    <div class="duvida-text">Como resolver duplicação de aulas no diário? <span class="tag tag-roxo" style="margin-left:4px;">Gestão de Diário</span></div>
+    <div class="duvida-count">3x</div>
   </div>
   <div class="duvida-item">
     <div class="duvida-num">3</div>
-    <div class="duvida-text">Como emitir boletim de aluno transferido com matrícula cancelada? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios</span></div>
-    <div class="duvida-count">1x</div>
+    <div class="duvida-text">Como emitir boletim de aluno transferido? <span class="tag tag-roxo" style="margin-left:4px;">Relatórios e Documentos</span></div>
+    <div class="duvida-count">2x</div>
   </div>
   </div>
   <div class="card">
@@ -404,19 +404,19 @@ body { font-family: 'DM Sans', sans-serif; background: #F8F6FC; color: var(--pre
       <span>😡 frustrado</span><span>😐 neutro</span><span>😄 satisfeito</span>
     </div>
     <div style="position:relative;height:10px;background:linear-gradient(to right,#EF4444,#F59E0B,#10B981);border-radius:10px;">
-      <div style="position:absolute;top:-4px;width:18px;height:18px;background:white;border:2px solid #6B0FCC;border-radius:50%;transform:translateX(-50%);left:60%"></div>
+      <div style="position:absolute;top:-4px;width:18px;height:18px;background:white;border:2px solid #6B0FCC;border-radius:50%;transform:translateX(-50%);left:50%"></div>
     </div>
     <div style="text-align:center;margin-top:12px;">
-      <span style="font-size:24px;">🙂</span>
-      <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">ok</span>
-      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Escolas enfrentam problemas técnicos significativos (notas, aulas duplicadas, cadastros) com suporte responsivo mas soluções parciais; Interação particularmente frustrada com processos manuais demorados impactando certificados.</p>
-      <p style="font-size:10px;color:#9CA3AF;margin:8px 0 0 0;font-family:monospace;">scores: Interação: -2 | Anchieta/CSP: -1 | Canadense ECB: 0 | Simbios: 1 | Over: 2 | Magnum: 3 | média: 0.50</p>
+      <span style="font-size:24px;">😐</span>
+      <span style="font-size:14px;font-weight:600;color:#1A1A1A;margin-left:6px;">neutro</span>
+      <p style="font-size:11px;color:#6B7280;margin:4px 0 0 0;">Escolas enfrentam problemas técnicos frequentes, mas maioria consegue orientação; frustração concentra-se em soluções que demandam trabalho manual repetitivo e falta de clareza em processos críticos (aulas, notas, relatórios).</p>
+      <p style="font-size:10px;color:#9CA3AF;margin:8px 0 0 0;font-family:monospace;">scores: Interação: -2 | Canadense ECB: -1 | Anchieta/CSP: -1 | Simbios: 0 | Over: 1 | Magnum: 2 | média: -0.17</p>
     </div>
   </div>
 
   <div style="border-top:0.5px solid #E5E7EB;padding-top:14px;">
     <div style="display:flex;flex-wrap:wrap;gap:8px;">
-      <div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEE2E2;border-radius:20px;"><span style="font-size:16px;">😤</span><span style="font-size:12px;font-weight:600;color:#991B1B;">Interação</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#92400E;">Anchieta/CSP</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#F3F4F6;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#374151;">Canadense ECB</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#ECFDF5;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#065F46;">Simbios</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Over</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Magnum</span></div>
+      <div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEE2E2;border-radius:20px;"><span style="font-size:16px;">😤</span><span style="font-size:12px;font-weight:600;color:#991B1B;">Interação</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#92400E;">Canadense ECB</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#FEF3C7;border-radius:20px;"><span style="font-size:16px;">😟</span><span style="font-size:12px;font-weight:600;color:#92400E;">Anchieta/CSP</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#F3F4F6;border-radius:20px;"><span style="font-size:16px;">😐</span><span style="font-size:12px;font-weight:600;color:#374151;">Simbios</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#ECFDF5;border-radius:20px;"><span style="font-size:16px;">🙂</span><span style="font-size:12px;font-weight:600;color:#065F46;">Over</span></div><div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:#D1FAE5;border-radius:20px;"><span style="font-size:16px;">😊</span><span style="font-size:12px;font-weight:600;color:#065F46;">Magnum</span></div>
     </div>
   </div>
 </div>
